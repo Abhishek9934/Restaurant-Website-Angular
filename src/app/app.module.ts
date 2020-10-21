@@ -21,6 +21,16 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import { DishService} from './services/dish.service';
 import {LeaderService} from './services/leader.service';
 import {PromotionService} from './services/promotion.service';
+import { LoginComponent } from './login/login.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox'
+import { FormsModule } from '@angular/forms';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,6 +42,7 @@ import {PromotionService} from './services/promotion.service';
     AboutComponent,
     HomeComponent,
     ContactComponent,
+    LoginComponent,
     
   ],
   imports: [
@@ -43,17 +54,24 @@ import {PromotionService} from './services/promotion.service';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule  
+  ],
+  entryComponents:[
+  LoginComponent
 
-  
   ],
   exports:[],
   providers: [
     DishService,
     LeaderService,
     PromotionService
-            
-  
+
+
   ],
   bootstrap: [AppComponent]
 })
