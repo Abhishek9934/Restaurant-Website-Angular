@@ -1,4 +1,6 @@
-# MyFirstApp
+# Restaurant Website
+
+This project is just to learn Angular.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
